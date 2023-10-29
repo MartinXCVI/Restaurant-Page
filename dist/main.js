@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector("#content"),document.createElement("section").classList.add("page-content")})();
