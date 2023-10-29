@@ -1,5 +1,5 @@
 import renderPage from './renderPage';
 
 // Render the page
-
-renderPage()
+renderPage();
+console.log(renderPage)
