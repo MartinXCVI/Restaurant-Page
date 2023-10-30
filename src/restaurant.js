@@ -37,10 +37,10 @@ const makeUpMyPage = () => {
 	main.appendChild(welcomeCard);
 
 	const welcomeTitle = document.createElement('h2');
-	welcomeTitle.textContent = 'Be very welcome!';
+	welcomeTitle.textContent = 'Be VERY Welcome! 🥩';
 
 	const welcomeSubtitle = document.createElement('h3');
-	welcomeSubtitle.textContent = 'Feel free to do your order...';
+	welcomeSubtitle.textContent = 'The true place to feast'
 
 	const welcomeFigure = document.createElement('figure');
 	welcomeFigure.classList.add('welcome-fig');
@@ -69,7 +69,13 @@ const makeUpMyPage = () => {
 	myGithub.target = '_blank';
 	myGithub.textContent = 'MartinXCVI';
 
+	const githubIcon = document.createElement('img');
+	githubIcon.src = '../dist/icons/github.png';
+	githubIcon.classList.add('github-icon');
+
+
 	developerSignature.append(signature, myGithub);
+	myGithub.appendChild(githubIcon)
 
 	// Adding all the page content to the container
 	content.appendChild(pageContent)
