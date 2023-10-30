@@ -1,7 +1,11 @@
 import makeUpMyPage from './restaurant'
+import createHeaderWithNav from './headerAndNav';
+import createFooter from './footer';
 
 function initialRender() {
-  makeUpMyPage()
+  createHeaderWithNav();
+  makeUpMyPage();
+  createFooter();
 }
 
 export default initialRender;
