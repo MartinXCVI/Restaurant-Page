@@ -5,10 +5,15 @@ const MakeUpContactPage = () => {
 	const pageContent = document.createElement('div');
 	pageContent.classList.add('page-content');
 
+	// Page's MAIN
+	const main = document.createElement('main');
+	main.id = 'principal';
+	pageContent.appendChild(main);
+
 	// Formulary
 	const contactForm = document.createElement('form');
 	contactForm.classList.add('contact-formu');
-	pageContent.appendChild(contactForm);
+	main.appendChild(contactForm);
 
 	const legendTitle = document.createElement('legend');
 	legendTitle.classList.add('legend-title');
