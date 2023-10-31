@@ -126,6 +126,7 @@ a {
 		font-family: 'Montserrat', sans-serif;
 		padding-top: 1em;
 		padding-bottom: 1em;
+		margin-bottom: 2em;
 		border-radius: 0.3em;
 	}
 
@@ -166,6 +167,61 @@ a {
 		padding-top: 0.3em;
 		padding-bottom: 0.3em;
 		background-color: gold;
+		border-radius: 2em;
+	}
+
+	/*-------------------*/
+
+	/*-------DRINKS------*/
+
+	.drinks-article {
+		width: 95%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+		background-color: #121212;
+		font-family: 'Montserrat', sans-serif;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border-radius: 0.3em;
+	}
+
+	.drink-card {
+		width: 85%;
+		display: flex; flex-direction: column; justify-content: center; align-items: left;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 0.5em;
+		border-left: 0.4em solid hsl(0, 0%, 95%);
+		border-top-left-radius: 0.4em;
+		margin-bottom: 1.5em;
+	}
+
+	.drink-title {
+		margin-bottom: 0.5em;
+		color:hsl(0, 0%, 95%);
+	}
+
+	.drink-fig {
+		width: 100%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+		margin-bottom: 0.5em;
+	}
+
+	.drink-img {
+		width: 100%;
+		border-radius: 0.5em;
+	}
+
+	.drink-card p {
+		font-size: 0.8em;
+		color: white;
+		margin-bottom: 0.7em;
+	}
+
+	.drink-btn {
+		width: 100%;
+		padding-top: 0.3em;
+		padding-bottom: 0.3em;
+		background-color: rgb(210, 0, 0);
 		border-radius: 2em;
 	}
 
@@ -233,11 +289,11 @@ a {
 		width: 85%;
 	}
 
-	.dishes-article {
+	.dishes-article, .drinks-article {
 		width: 85%;
 	}
 
-	.dish-card {
+	.dish-card, .drink-card {
 		width: 80%;
 	}
 
@@ -261,11 +317,11 @@ a {
 		width: 80%;
 	}
 
-	.dishes-article {
+	.dishes-article, .drinks-article {
 		width: 80%;
 	}
 
-	.dish-card {
+	.dish-card, .drink-card {
 		width: 75%;
 	}
 
@@ -293,7 +349,7 @@ a {
 		width: 70%;
 	}
 
-	.dishes-article {
+	.dishes-article, .drinks-article {
 		width: 70%;
 	}
 
@@ -317,11 +373,11 @@ a {
 		width: 65%;
 	}
 
-	.dishes-article {
+	.dishes-article, .drinks-article {
 		width: 65%;
 	}
 
-	.dish-card {
+	.dish-card, .drink-card {
 		width: 75%;
 	}
 
@@ -349,13 +405,13 @@ a {
 		width: 90%;
 	}
 
-	.dishes-article {
+	.dishes-article, .drinks-article {
 		width: 90%;
-		flex-direction: row; justify-content: space-evenly;
+		flex-direction: row; justify-content: space-around;
 		flex-wrap: wrap;
 	}
 
-	.dish-card {
+	.dish-card, .drink-card {
 		width: 35%;
 	}
 
@@ -379,7 +435,7 @@ a {
 		width: 85%;
 	}
 
-	.dishes-article {
+	.dishes-article, .drinks-article {
 		width: 85%;
 	}
 
@@ -399,7 +455,7 @@ a {
 
 	/*-----Menu Page-----*/
 
-	.dish-card {
+	.dish-card, .drink-card {
 		width: 24%;
 	}
 
@@ -419,7 +475,7 @@ a {
 
 	/*-----Menu Page-----*/
 
-	.dish-card {
+	.dish-card, .drink-card {
 		width: 19%;
 	}
 

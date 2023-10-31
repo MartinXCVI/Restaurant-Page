@@ -21,7 +21,7 @@ const MakeUpMenuPage = () => {
 	menuHeading.textContent = 'Our Dishes';
 	menuContainer.appendChild(menuHeading);
 
-	//----- Dishes
+	//----- DISHES
 	
 	const dishesArticle = document.createElement('article');
 	dishesArticle.classList.add('dishes-article');
@@ -286,6 +286,175 @@ const MakeUpMenuPage = () => {
 
 	steakFriesCard.append(steakFriesTitle, steakFriesFigure, steakFriesPrice, steakFriesDescription, steakFriesBtn);
 
+	// Hamburguer Card
+
+	const hamburguerCard = document.createElement('div');
+	hamburguerCard.classList.add('dish-card', 'hamburguer-card');
+	dishesArticle.appendChild(hamburguerCard);
+
+	const hamburguerTitle = document.createElement('h4');
+	hamburguerTitle.classList.add('dish-title')
+	hamburguerTitle.textContent = 'Double Hamburguer';
+	const hamburguerFigure = document.createElement('figure');
+	hamburguerFigure.classList.add('dish-fig', 'hamburguer-fig')
+	const hamburguerImage = document.createElement('img');
+	hamburguerImage.src = '../dist/img/menu-img/hamburguer.jpg';
+	hamburguerImage.alt = 'big double hamburguer';
+	hamburguerImage.classList.add('dish-img', 'hamburguer-img');
+	hamburguerFigure.appendChild(hamburguerImage);
+	const hamburguerPrice = document.createElement('p');
+	hamburguerPrice.textContent = 'Pricing: $17.20';
+	const hamburguerDescription = document.createElement('p');
+	hamburguerDescription.textContent = 'Tasty and powerful option. Big double hamburguer to smash your hunger and cravings!';
+	const hamburguerBtn = document.createElement('button');
+	hamburguerBtn.classList.add('dish-btn', 'hamburguer-btn');
+	hamburguerBtn.textContent = 'Delivery!';
+
+	hamburguerCard.append(hamburguerTitle, hamburguerFigure, hamburguerPrice, hamburguerDescription, hamburguerBtn);
+
+	// Grilled chicken Card
+
+	const chickenCard = document.createElement('div');
+	chickenCard.classList.add('dish-card', 'chicken-card');
+	dishesArticle.appendChild(chickenCard);
+
+	const chickenTitle = document.createElement('h4');
+	chickenTitle.classList.add('dish-title')
+	chickenTitle.textContent = 'Grilled Chicken';
+	const chickenFigure = document.createElement('figure');
+	chickenFigure.classList.add('dish-fig', 'chicken-fig')
+	const chickenImage = document.createElement('img');
+	chickenImage.src = '../dist/img/menu-img/chicken.jpg';
+	chickenImage.alt = 'grilled chicken';
+	chickenImage.classList.add('dish-img', 'chicken-img');
+	chickenFigure.appendChild(chickenImage);
+	const chickenPrice = document.createElement('p');
+	chickenPrice.textContent = 'Pricing: $16.80';
+	const chickenDescription = document.createElement('p');
+	chickenDescription.textContent = 'Grilled chicken, as you read it. It can be order alongside with fries or salad.';
+	const chickenBtn = document.createElement('button');
+	chickenBtn.classList.add('dish-btn', 'chicken-btn');
+	chickenBtn.textContent = 'Delivery!';
+
+	chickenCard.append(chickenTitle, chickenFigure, chickenPrice, chickenDescription, chickenBtn);
+
+	//----- DRINKS
+
+	const drinksHeading = document.createElement('h2');
+	drinksHeading.classList.add('menu-heading')
+	drinksHeading.textContent = 'Our Drinks';
+	menuContainer.appendChild(drinksHeading);
+	
+	const drinksArticle = document.createElement('article');
+	drinksArticle.classList.add('drinks-article');
+	menuContainer.appendChild(drinksArticle);
+
+
+	// Soda
+
+	const sodaCard = document.createElement('div');
+	sodaCard.classList.add('drink-card', 'soda-card');
+	drinksArticle.appendChild(sodaCard);
+
+	const sodaTitle = document.createElement('h4');
+	sodaTitle.classList.add('drink-title')
+	sodaTitle.textContent = '2lts Soda';
+	const sodaFigure = document.createElement('figure');
+	sodaFigure.classList.add('drink-fig', 'soda-fig')
+	const sodaImage = document.createElement('img');
+	sodaImage.src = '../dist/img/drinks-img/sodas.jpg';
+	sodaImage.alt = '2 litres sodas';
+	sodaImage.classList.add('drink-img', 'soda-img');
+	sodaFigure.appendChild(sodaImage);
+	const sodaPrice = document.createElement('p');
+	sodaPrice.textContent = 'Pricing: $8.55';
+	const sodaDescription = document.createElement('p');
+	sodaDescription.textContent = 'Soda for the sweet teeth. Be it coke, Fanta or Sprite. Order whatever you prefer.';
+	const sodaBtn = document.createElement('button');
+	sodaBtn.classList.add('drink-btn', 'soda-btn');
+	sodaBtn.textContent = 'Delivery!';
+
+	sodaCard.append(sodaTitle, sodaFigure, sodaPrice, sodaDescription, sodaBtn);
+
+	// Malbec wine Card
+
+	const malbecCard = document.createElement('div');
+	malbecCard.classList.add('drink-card', 'malbec-card');
+	drinksArticle.appendChild(malbecCard);
+
+	const malbecTitle = document.createElement('h4');
+	malbecTitle.classList.add('drink-title')
+	malbecTitle.textContent = 'Malbec Wine';
+	const malbecFigure = document.createElement('figure');
+	malbecFigure.classList.add('drink-fig', 'malbec-fig')
+	const malbecImage = document.createElement('img');
+	malbecImage.src = '../dist/img/drinks-img/malbec.jpg';
+	malbecImage.alt = 'malbec wine bottle';
+	malbecImage.classList.add('drink-img', 'malbec-img');
+	malbecFigure.appendChild(malbecImage);
+	const malbecPrice = document.createElement('p');
+	malbecPrice.textContent = 'Pricing: $30.00';
+	const malbecDescription = document.createElement('p');
+	malbecDescription.textContent = 'Fine Malbec bottles. Different varieties and brands.';
+	const malbecBtn = document.createElement('button');
+	malbecBtn.classList.add('drink-btn', 'malbec-btn');
+	malbecBtn.textContent = 'Delivery!';
+
+	malbecCard.append(malbecTitle, malbecFigure, malbecPrice, malbecDescription, malbecBtn);
+
+	// Beer Quilmes Card
+
+	const quilmesCard = document.createElement('div');
+	quilmesCard.classList.add('drink-card', 'quilmes-card');
+	drinksArticle.appendChild(quilmesCard);
+
+	const quilmesTitle = document.createElement('h4');
+	quilmesTitle.classList.add('drink-title')
+	quilmesTitle.textContent = 'Quilmes Beer';
+	const quilmesFigure = document.createElement('figure');
+	quilmesFigure.classList.add('drink-fig', 'quilmes-fig')
+	const quilmesImage = document.createElement('img');
+	quilmesImage.src = '../dist/img/drinks-img/quilmes.jpg';
+	quilmesImage.alt = 'quilmes beer bottle';
+	quilmesImage.classList.add('drink-img', 'quilmes-img');
+	quilmesFigure.appendChild(quilmesImage);
+	const quilmesPrice = document.createElement('p');
+	quilmesPrice.textContent = 'Pricing: $8.55';
+	const quilmesDescription = document.createElement('p');
+	quilmesDescription.textContent = 'Quilmes beer for the lupulus lovers! Just beware of knowing when is too much!';
+	const quilmesBtn = document.createElement('button');
+	quilmesBtn.classList.add('drink-btn', 'quilmes-btn');
+	quilmesBtn.textContent = 'Delivery!';
+
+	quilmesCard.append(quilmesTitle, quilmesFigure, quilmesPrice, quilmesDescription, quilmesBtn);
+
+	// Syrah wine Card
+
+	const syrahCard = document.createElement('div');
+	syrahCard.classList.add('drink-card', 'syrah-card');
+	drinksArticle.appendChild(syrahCard);
+
+	const syrahTitle = document.createElement('h4');
+	syrahTitle.classList.add('drink-title')
+	syrahTitle.textContent = 'Syrah Wine';
+	const syrahFigure = document.createElement('figure');
+	syrahFigure.classList.add('drink-fig', 'syrah-fig')
+	const syrahImage = document.createElement('img');
+	syrahImage.src = '../dist/img/drinks-img/syr.jpg';
+	syrahImage.alt = 'syrah wine bottle';
+	syrahImage.classList.add('drink-img', 'syrah-img');
+	syrahFigure.appendChild(syrahImage);
+	const syrahPrice = document.createElement('p');
+	syrahPrice.textContent = 'Pricing: $8.55';
+	const syrahDescription = document.createElement('p');
+	syrahDescription.textContent = 'Elegant syrah. The house favourite. Different varieties and brands evenly.';
+	const syrahBtn = document.createElement('button');
+	syrahBtn.classList.add('drink-btn', 'syrah-btn');
+	syrahBtn.textContent = 'Delivery!';
+
+	syrahCard.append(syrahTitle, syrahFigure, syrahPrice, syrahDescription, syrahBtn);
+
+	//---------------------------------------------
 	// Adding ALL the page content to the container
 	content.appendChild(pageContent);
 
