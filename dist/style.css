@@ -19,6 +19,10 @@ a {
 	text-decoration: none;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 /*---------------------320px---------------------*/
 
 @media all and (min-width: 320px) {
@@ -51,6 +55,11 @@ a {
 		display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 0.8em;
+	}
+
+	.header nav ul li:hover {
+		text-decoration: underline;
+		cursor: pointer;
 	}
 
 	#principal {
@@ -132,6 +141,7 @@ a {
 
 	.dish-card {
 		width: 85%;
+		height: 18em;
 		display: flex; flex-direction: column; justify-content: center; align-items: left;
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
@@ -153,7 +163,9 @@ a {
 
 	.dish-img {
 		width: 100%;
+		height: 8em;
 		border-radius: 0.5em;
+		box-shadow: 0.3em 0.3em 0em 0em #121212;
 	}
 
 	.dish-card p {
@@ -166,8 +178,12 @@ a {
 		width: 100%;
 		padding-top: 0.3em;
 		padding-bottom: 0.3em;
-		background-color: gold;
+		background-color: yellow;
 		border-radius: 2em;
+	}
+
+	.dish-btn:hover {
+		background-color: gold;
 	}
 
 	/*-------------------*/
@@ -186,6 +202,7 @@ a {
 
 	.drink-card {
 		width: 85%;
+		height: 20em;
 		display: flex; flex-direction: column; justify-content: center; align-items: left;
 		padding-top: 0.5em;
 		padding-bottom: 0.5em;
@@ -208,7 +225,9 @@ a {
 
 	.drink-img {
 		width: 100%;
+		height: 10em;
 		border-radius: 0.5em;
+		box-shadow: 0.3em 0.3em 0em 0em darkred;
 	}
 
 	.drink-card p {
@@ -222,7 +241,12 @@ a {
 		padding-top: 0.3em;
 		padding-bottom: 0.3em;
 		background-color: rgb(210, 0, 0);
+		color: hsl(0, 0%, 95%);
 		border-radius: 2em;
+	}
+
+	.drink-btn:hover {
+		background-color: darkred;
 	}
 
 	/*-------------------*/

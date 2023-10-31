@@ -149,7 +149,7 @@ const MakeUpMenuPage = () => {
 	const milanesaPrice = document.createElement('p');
 	milanesaPrice.textContent = 'Pricing: $21.50';
 	const milanesaDescription = document.createElement('p');
-	milanesaDescription.textContent = 'Description: Unmissable delicacy. Well cut tomatoes, fresh lettuce, breaded loin steak. We highly recomment it...';
+	milanesaDescription.textContent = 'Description: Unmissable delicacy. Well cut tomatoes, fresh lettuce, breaded loin steak. We recomment it.';
 	const milanesaBtn = document.createElement('button');
 	milanesaBtn.classList.add('dish-btn', 'mollejas-btn');
 	milanesaBtn.textContent = 'Delivery!';
@@ -164,7 +164,7 @@ const MakeUpMenuPage = () => {
 
 	const morcillaTitle = document.createElement('h4');
 	morcillaTitle.classList.add('dish-title')
-	morcillaTitle.textContent = 'Morcilla Slices with Bread';
+	morcillaTitle.textContent = 'Morcilla Slices';
 	const morcillaFigure = document.createElement('figure');
 	morcillaFigure.classList.add('dish-fig', 'morcilla-fig')
 	const morcillaImage = document.createElement('img');
@@ -190,7 +190,7 @@ const MakeUpMenuPage = () => {
 
 	const neapolitanTitle = document.createElement('h4');
 	neapolitanTitle.classList.add('dish-title')
-	neapolitanTitle.textContent = 'Neapolitan Milanesa with Fries';
+	neapolitanTitle.textContent = 'Neapolitan Milanesa';
 	const neapolitanFigure = document.createElement('figure');
 	neapolitanFigure.classList.add('dish-fig', 'neapolitan-fig')
 	const neapolitanImage = document.createElement('img');
@@ -253,7 +253,7 @@ const MakeUpMenuPage = () => {
 	const russianSaladPrice = document.createElement('p');
 	russianSaladPrice.textContent = 'Pricing: $10.00';
 	const russianSaladDescription = document.createElement('p');
-	russianSaladDescription.textContent = 'Russian salad for those who prefer a lighter option. Nonetheless, it\'s also good as a plus!';
+	russianSaladDescription.textContent = 'Russian salad for those who prefer a lighter option. Although, also good as a plus!';
 	const russianSaladBtn = document.createElement('button');
 	russianSaladBtn.classList.add('dish-btn', 'russian-salad-btn');
 	russianSaladBtn.textContent = 'Delivery!';
@@ -279,7 +279,7 @@ const MakeUpMenuPage = () => {
 	const steakFriesPrice = document.createElement('p');
 	steakFriesPrice.textContent = 'Pricing: $26.75';
 	const steakFriesDescription = document.createElement('p');
-	steakFriesDescription.textContent = 'Timeless classic. If you don\'t know what to eat, this is the option. It just won\'t disapoint you.';
+	steakFriesDescription.textContent = 'Timeless classic. If you don\'t know what to eat, this is the option. It won\'t disapoint you.';
 	const steakFriesBtn = document.createElement('button');
 	steakFriesBtn.classList.add('dish-btn', 'steak-fries-btn');
 	steakFriesBtn.textContent = 'Delivery!';
@@ -395,7 +395,7 @@ const MakeUpMenuPage = () => {
 	const malbecPrice = document.createElement('p');
 	malbecPrice.textContent = 'Pricing: $30.00';
 	const malbecDescription = document.createElement('p');
-	malbecDescription.textContent = 'Fine Malbec bottles. Different varieties and brands.';
+	malbecDescription.textContent = 'Fine Malbec bottles. Different varieties and brands. Let yourself be happy.';
 	const malbecBtn = document.createElement('button');
 	malbecBtn.classList.add('drink-btn', 'malbec-btn');
 	malbecBtn.textContent = 'Delivery!';
@@ -453,6 +453,110 @@ const MakeUpMenuPage = () => {
 	syrahBtn.textContent = 'Delivery!';
 
 	syrahCard.append(syrahTitle, syrahFigure, syrahPrice, syrahDescription, syrahBtn);
+
+	// Gas water Card
+
+	const gasWaterCard = document.createElement('div');
+	gasWaterCard.classList.add('drink-card', 'gas-water-card');
+	drinksArticle.appendChild(gasWaterCard);
+
+	const gasWaterTitle = document.createElement('h4');
+	gasWaterTitle.classList.add('drink-title')
+	gasWaterTitle.textContent = 'Gas Water';
+	const gasWaterFigure = document.createElement('figure');
+	gasWaterFigure.classList.add('drink-fig', 'gas-water-fig')
+	const gasWaterImage = document.createElement('img');
+	gasWaterImage.src = '../dist/img/drinks-img/gas-water.jpg';
+	gasWaterImage.alt = 'Gas Water';
+	gasWaterImage.classList.add('drink-img', 'gas-water-img');
+	gasWaterFigure.appendChild(gasWaterImage);
+	const gasWaterPrice = document.createElement('p');
+	gasWaterPrice.textContent = 'Pricing: $7.00';
+	const gasWaterDescription = document.createElement('p');
+	gasWaterDescription.textContent = 'Gas water for mixed sensations. Refreshing and pure for the thirsty.';
+	const gasWaterBtn = document.createElement('button');
+	gasWaterBtn.classList.add('drink-btn', 'gas-water-btn');
+	gasWaterBtn.textContent = 'Delivery!';
+
+	gasWaterCard.append(gasWaterTitle, gasWaterFigure, gasWaterPrice, gasWaterDescription, gasWaterBtn);
+
+	// Whisky
+
+	const whiskyCard = document.createElement('div');
+	whiskyCard.classList.add('drink-card', 'whisky-card');
+	drinksArticle.appendChild(whiskyCard);
+
+	const whiskyTitle = document.createElement('h4');
+	whiskyTitle.classList.add('drink-title')
+	whiskyTitle.textContent = 'Whisky';
+	const whiskyFigure = document.createElement('figure');
+	whiskyFigure.classList.add('drink-fig', 'whisky-fig')
+	const whiskyImage = document.createElement('img');
+	whiskyImage.src = '../dist/img/drinks-img/whisky.jpg';
+	whiskyImage.alt = 'whisky';
+	whiskyImage.classList.add('drink-img', 'whisky-img');
+	whiskyFigure.appendChild(whiskyImage);
+	const whiskyPrice = document.createElement('p');
+	whiskyPrice.textContent = 'Pricing: from $40.00';
+	const whiskyDescription = document.createElement('p');
+	whiskyDescription.textContent = 'Whisky for the gentleman. Price may vary depending on the brand you order.';
+	const whiskyBtn = document.createElement('button');
+	whiskyBtn.classList.add('drink-btn', 'gas-water-btn');
+	whiskyBtn.textContent = 'Delivery!';
+
+	whiskyCard.append(whiskyTitle, whiskyFigure, whiskyPrice, whiskyDescription, whiskyBtn);
+
+	// Mineral water Card
+
+	const waterCard = document.createElement('div');
+	waterCard.classList.add('drink-card', 'water-card');
+	drinksArticle.appendChild(waterCard);
+
+	const waterTitle = document.createElement('h4');
+	waterTitle.classList.add('drink-title')
+	waterTitle.textContent = 'Mineral Water';
+	const waterFigure = document.createElement('figure');
+	waterFigure.classList.add('drink-fig', 'water-fig')
+	const waterImage = document.createElement('img');
+	waterImage.src = '../dist/img/drinks-img/mineral-water.jpg';
+	waterImage.alt = 'mineral water bottle';
+	waterImage.classList.add('drink-img', 'water-img');
+	waterFigure.appendChild(waterImage);
+	const waterPrice = document.createElement('p');
+	waterPrice.textContent = 'Pricing: $5.00';
+	const waterDescription = document.createElement('p');
+	waterDescription.textContent = 'Pure, clear and clean mineral water. Healthiest alternative for your wellbeing.';
+	const waterBtn = document.createElement('button');
+	waterBtn.classList.add('drink-btn', 'water-btn');
+	waterBtn.textContent = 'Delivery!';
+
+	waterCard.append(waterTitle, waterFigure, waterPrice, waterDescription, waterBtn);
+
+	// Fruits juice Card
+
+	const juiceCard = document.createElement('div');
+	juiceCard.classList.add('drink-card', 'juice-card');
+	drinksArticle.appendChild(juiceCard);
+
+	const juiceTitle = document.createElement('h4');
+	juiceTitle.classList.add('drink-title')
+	juiceTitle.textContent = 'Fruits Juice';
+	const juiceFigure = document.createElement('figure');
+	juiceFigure.classList.add('drink-fig', 'juice-fig')
+	const juiceImage = document.createElement('img');
+	juiceImage.src = '../dist/img/drinks-img/juice.jpg';
+	juiceImage.alt = 'fruits juice';
+	juiceImage.classList.add('drink-img', 'juice-img');
+	juiceFigure.appendChild(juiceImage);
+	const juicePrice = document.createElement('p');
+	juicePrice.textContent = 'Pricing: $13.60';
+	const juiceDescription = document.createElement('p');
+	juiceDescription.textContent = 'Fruits juice, our colorful alternatives. It can be ordered with a little of liquor too.';
+	const juiceBtn = document.createElement('button');
+	juiceBtn.classList.add('drink-btn', 'juice-btn');
+	juiceBtn.textContent = 'Delivery!';
+
+	juiceCard.append(juiceTitle, juiceFigure, juicePrice, juiceDescription, juiceBtn);
 
 	//---------------------------------------------
 	// Adding ALL the page content to the container
