@@ -32,6 +32,23 @@ const createFooter = () => {
 	developerSignature.append(signature, myGithub);
 	myGithub.appendChild(githubIcon)
 
+	// Icons attribute
+
+	const iconsAttributeSpan = document.createElement('span');
+	iconsAttributeSpan.classList.add('icons-attribute-span');
+	const iconsAttributePara = document.createElement('p');
+	iconsAttributePara.classList.add('icons-attribute-span');
+	iconsAttributePara.textContent = 'UIcons by' + ' ';
+	const iconsAttributeLink = document.createElement('a');
+	iconsAttributeLink.classList.add('icons-attribute-link');
+	iconsAttributeLink.href = 'https://www.flaticon.com/uicons';
+	iconsAttributeLink.target = '_blank';
+	iconsAttributeLink.textContent = 'Flaticon';
+
+	footer.appendChild(iconsAttributeSpan);
+	iconsAttributePara.appendChild(iconsAttributeLink);
+	iconsAttributeSpan.appendChild(iconsAttributePara);
+
 }
 
 export default createFooter;

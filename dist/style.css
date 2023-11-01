@@ -251,6 +251,56 @@ button:hover {
 
 	/*-------------------*/
 
+	/*----Contact Page----*/
+
+	.contact-title {
+		width: 90%;
+		text-align: left;
+		font-family: 'Great Vibes', cursive;
+		font-size: 1.5em;
+		color: hsl(0, 0%, 95%);
+		margin-bottom: 0.5em
+	}
+
+	.contact-container {
+		width: 90%;
+		display: flex; flex-direction: column; justify-content: center; align-items: center;
+		padding-top: 2em;
+		padding-bottom: 0.5em;
+		background-color: #121212;
+		border-radius: 0.5em;
+	}
+
+	.contact-div {
+		width: 90%;
+		display: flex; flex-direction: column; align-items: center; justify-content: center;
+		background-color: rgb(210, 0, 0);
+		font-family: 'Montserrat', sans-serif;
+		color: hsl(0, 0%, 95%);
+		font-size: 0.8em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border-radius: 0.5em;
+		box-shadow: 0.3em 0.3em 0em 0em darkred;
+		margin-bottom: 2em;
+	}
+
+	.contact-logo-fig {
+		width: 15%;
+		display: flex; flex-direction: column; align-items: center; justify-content: center;
+		background-color: hsl(0, 0%, 95%);
+		border: 2px solid #121212;
+		border-radius: 20em;
+		padding: 1em;
+		margin-bottom: 0.5em;
+	}
+
+	.contact-icon-img {
+		width: 100%;
+	}
+
+	/*--------------------*/
+
 	#footer {
 		width: 100%;
 		display: flex; flex-direction: column; justify-content: center; align-items: center;
@@ -261,23 +311,36 @@ button:hover {
 		font-size: 0.7em;
 	}
 
-	.developer-signature {
+	.developer-signature, .icons-attribute-span {
 		width: 90%;
 		display: flex; flex-direction: row; justify-content: center; align-items: center;
 		font-family: 'Montserrat', sans-serif;
 		color: hsl(0, 0%, 95%);
 	}
 
+	.developer-signature {
+		margin-bottom: 0.5em;
+	}
+
 	.signature {
 		padding-right: 0.3em;
 	}
 
-	.my-github {
+	.icons-attribute-link {
+		padding-left: 0.3em;
+	}
+
+	.my-github, .icons-attribute-link {
 		display: flex; flex-direction: row; justify-content: center; align-items: center;
 		color: sandybrown;
 	}
 
 	.my-github:hover, .my-github:focus {
+		text-decoration: underline;
+		color: salmon;
+	}
+
+	.icons-attribute-link:hover, .icons-attribute-link:focus {
 		text-decoration: underline;
 		color: salmon;
 	}
@@ -323,6 +386,18 @@ button:hover {
 
 	/*-------------------*/
 
+	/*---Contact Page----*/
+
+	.contact-container {
+		width: 80%;
+	}
+
+	.contact-title {
+		width: 80%;
+	}
+
+	/*-------------------*/
+
 }
 
 /*------------------END: 480px-------------------*/
@@ -346,6 +421,18 @@ button:hover {
 	}
 
 	.dish-card, .drink-card {
+		width: 75%;
+	}
+
+	/*-------------------*/
+
+	/*---Contact Page----*/
+
+	.contact-container {
+		width: 75%;
+	}
+
+	.contact-title {
 		width: 75%;
 	}
 
@@ -379,6 +466,18 @@ button:hover {
 
 	/*-------------------*/
 
+	/*---Contact Page----*/
+
+	.contact-container {
+		width: 60%;
+	}
+
+	.contact-title {
+		width: 60%;
+	}
+
+	/*-------------------*/
+
 }
 
 /*------------------END: 768px-------------------*/
@@ -403,6 +502,18 @@ button:hover {
 
 	.dish-card, .drink-card {
 		width: 75%;
+	}
+
+	/*-------------------*/
+
+	/*---Contact Page----*/
+
+	.contact-container {
+		width: 55%;
+	}
+
+	.contact-title {
+		width: 55%;
 	}
 
 	/*-------------------*/
@@ -441,6 +552,26 @@ button:hover {
 
 	/*-------------------*/
 
+	/*---Contact Page----*/
+
+	.contact-container {
+		width: 75%;
+		flex-direction: row; justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.contact-div {
+		width: 45%;
+		height: 10em;
+	}
+
+	.contact-title {
+		width: 100%;
+		text-align: center;
+	}
+
+	/*-------------------*/
+
 }
 
 /*------------------END: 1024px-------------------*/
@@ -465,6 +596,14 @@ button:hover {
 
 	/*------------------*/
 
+	/*---Contact Pag----*/
+
+	.contact-container {
+		width: 65%;
+	}
+
+	/*------------------*/
+
 }
 
 /*------------------END: 1200px-------------------*/
@@ -485,6 +624,14 @@ button:hover {
 
 	/*-------------------*/
 
+	/*---Contact Pag----*/
+
+	.contact-container {
+		width: 60%;
+	}
+
+	/*------------------*/
+
 }
 
 /*------------------END: 1280px-------------------*/
@@ -504,6 +651,20 @@ button:hover {
 	}
 
 	/*-------------------*/
+
+	/*---Contact Pag----*/
+
+	.contact-container {
+		width: 95%;
+		padding-top: 4em;
+		padding-bottom: 3em;
+	}
+
+	.contact-div {
+		width: 20%;
+	}
+
+	/*------------------*/
 
 }
 
